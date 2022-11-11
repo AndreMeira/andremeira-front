@@ -17,8 +17,7 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@/Router": ["src/app/Router.tsx.tsx"],
-      "@/*": ["src/*"],
+      "@/*": ["src/*"]
     }
   },
   "include": ["src"],
