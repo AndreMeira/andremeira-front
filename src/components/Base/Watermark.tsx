@@ -1,4 +1,4 @@
-import "./watermark.scss";
+import "./Watermark.scss";
 
 interface WatermarkProps {
     children: JSX.Element|JSX.Element[]
