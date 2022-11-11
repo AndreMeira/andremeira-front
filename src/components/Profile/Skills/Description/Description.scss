@@ -1,0 +1,40 @@
+@import "@/components/Base/Variables.scss";
+
+.skills-description {
+    margin: 160px 0;
+    padding-left: 55px;
+    min-width: 280px;
+    @media (max-width: $tablet-breakpoint) {
+        padding: 15px;
+        margin: 40px 20px;
+    }
+    @media (max-width: $mobile-breakpoint) {
+        padding: 0;
+        margin: 40px 0 0;
+    }
+    h2 { 
+        font-family: var(--primary-font);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.125rem;
+        line-height: 4.625rem;
+        letter-spacing: 0.015em;
+        color: lighten(#42434A, 10);
+        .strong {
+            color: #F30376;
+        }
+    }
+    p {
+        font-family: 'Kanit';
+        font-style: normal;
+        font-weight: 275;
+        font-size: 16px; // we want a fix size
+        line-height:24px;
+        letter-spacing: 0.05em;
+
+        color: #E3E3E3;
+        &:last-child {
+            margin-top: 40px;
+        }
+    }
+}

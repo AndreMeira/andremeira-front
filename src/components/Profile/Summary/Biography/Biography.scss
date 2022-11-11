@@ -1,0 +1,26 @@
+@import "@/components/Base/Variables.scss";
+
+.biography {
+    font-size: 1.875rem;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.125rem;
+    padding: 160px 0;
+    letter-spacing: 0.025em;
+    
+    @media (max-width: $tablet-breakpoint) {
+        min-width: initial;
+        padding: 10px 0;
+    }
+    
+    u {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+    }
+
+    .icon { 
+        width: 2.25rem;
+        transform: translateY(0.3125rem);
+    }
+}

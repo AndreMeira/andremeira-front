@@ -1,0 +1,18 @@
+.app-container {
+  margin-top: 80px;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  z-index: 10;
+  background-color: #232328;
+  // border-bottom: solid white 1px;
+}
+
+.footer-container {
+  background-color: darken(#232328, 3);
+}

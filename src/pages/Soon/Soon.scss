@@ -1,0 +1,53 @@
+@import "@/components/Base/Variables.scss";
+
+.coming-soon-container {
+    font-size: 1.875rem;
+    font-family: 'Libre Baskerville';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.125rem;
+    padding: 160px 0;
+    min-height: calc(100vh - 440px);
+    letter-spacing: 0.025em;
+    z-index: 2;
+
+    .watermark h2 {
+        text-align: left;
+    }
+    
+    @media (max-width: $mobile-breakpoint) {
+        min-width: initial;
+        padding: 10px 0;
+        min-height: calc(100vh - 300px);
+    }
+    
+    u {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+    }
+
+    .icon { 
+        width: 2.25rem;
+        transform: translateY(0.3125rem);
+    }
+    .two-panels {
+        padding:0 55px;
+        flex-wrap: wrap;
+        @media (max-width: $mobile-breakpoint) {
+            min-width: initial;
+            padding: 0 15px;
+        }
+        .first-panel {
+            align-self: center;
+        }
+        .second-panel {
+            z-index: 1;
+            flex: 1;
+            padding:0 30px;
+            min-width: 280px;
+            @media (max-width: $mobile-breakpoint) {
+                padding: 20px 0;
+            }
+        }
+    }
+}

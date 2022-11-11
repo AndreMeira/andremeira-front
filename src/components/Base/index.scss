@@ -1,0 +1,35 @@
+@import "./Variables.scss";
+
+:root {
+  --primary-font: 'Libre Baskerville', serif;
+  --secondary-font: 'Kanit', sans-serif;
+
+  font-family: var(--primary-font);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  box-sizing: border-box;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #232328;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  
+  @media (max-width: $tablet-breakpoint) {
+    font-size: 10px;
+  }
+}
+
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+#root {
+  overflow: clip;
+}
+

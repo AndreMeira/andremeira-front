@@ -1,0 +1,40 @@
+@import "@/components/Base/Variables.scss";
+
+.two-panels.profile {
+    place-items: center;
+    flex-wrap: wrap;
+    padding: 0 55px;
+    justify-content: left;
+
+    .second-panel {
+        width: 60%;
+        min-width: 280px;
+        flex:1;
+        z-index: 1;
+    }
+    @media (max-width: $tablet-breakpoint) {
+        padding: 0 15px;
+        margin: 40px 20px;
+    }
+    @media (max-width: $mobile-breakpoint) {
+        padding: 0 15px;
+        margin: 40px 0;
+    }
+}
+
+.profile-summary-container {
+    background-color: #2F3036;
+    min-height: 100px;
+    padding: 0 0px;
+    overflow: hidden;
+
+    .identity-container {
+        min-width: 360px;
+        padding-right:55px;
+        @media (max-width: $tablet-breakpoint) {
+            min-width: initial;
+            padding: 0px;
+        }
+    }
+}
+

@@ -1,0 +1,43 @@
+@import "./Variables.scss";
+
+.watermark {
+    position: relative;
+    
+    h2 {
+        position: relative;
+        font-family: 'Libre Baskerville';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 4.625rem;
+        line-height: 4.625rem;
+        letter-spacing: 0.015em;
+        color: lighten(#4B4C55, 5);
+        z-index: 1;
+        text-align: left;
+    }
+    .big-circle {
+        position: absolute;
+        top:0;
+        left: 35px;
+        transform: translateY(-25%);
+        width: 398px;
+        height: 398px;
+        background:darken( #2C2D33, 1);
+        border-radius: 500px;
+        z-index: 0;
+        transition: transform 2s ease;
+
+    }
+    .small-circle {
+        position: absolute;
+        width: 208px;
+        height: 208px;
+        left: 0px;
+        top: 0;
+        transform: translate(-55px, 84px);
+        background: darken(rgba(35, 36, 40, 0.47), 3);
+        z-index: 0;
+        border-radius: 300px;
+        transition: transform .5s ease-out;
+    }
+}

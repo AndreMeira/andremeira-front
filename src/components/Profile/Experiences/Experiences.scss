@@ -1,0 +1,77 @@
+@import "@/components/Base/Variables.scss";
+
+.experiences-container {
+    overflow: clip;
+    background-color: #2F3036;
+    padding-bottom: 60px;
+    @media (max-width: $mobile-breakpoint) {
+        padding-top: 40px;
+    }
+
+    .portrait {
+        padding-top: 100px;
+        text-align: center;
+        position: relative;
+
+        @media (max-width: $mobile-breakpoint) {
+            padding-top: 40px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            bottom: 0;
+            transform: translateY(calc(100% + 10px));
+            left: 50%;
+            width: 1px;
+            height: 85px;
+            background-color: #62636D;
+            @media (max-width: $mobile-breakpoint) {
+                height: 40px;
+            }
+        }
+    }
+
+    .watermark {
+        margin-top: 120px;
+        @media (max-width: $mobile-breakpoint) {
+            margin-top: 0;
+        }
+        h2 {
+            @media (max-width: $mobile-breakpoint) {
+                text-align: center;
+            }
+        }
+    }
+
+    .two-panels {
+        flex-wrap: wrap;
+        padding: 0 55px;
+        @media (max-width: $tablet-breakpoint) {
+            padding: 0 15px;
+        }
+        @media (max-width: $mobile-breakpoint) {
+            padding: 0 15px;
+            flex-direction: column;
+        }
+        .first-panel, .second-panel {
+            flex-basis: 50%;
+            flex: 1;
+        }
+        .first-panel {
+            align-self: flex-start;
+            position: sticky;
+            top:180px;
+            @media (max-width: $mobile-breakpoint) {
+                top:0;
+                align-self: center;
+                position: relative;
+            }
+        }
+        .second-panel {
+            min-width: 280px;
+        }
+    }
+
+}

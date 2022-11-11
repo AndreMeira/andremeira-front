@@ -1,0 +1,21 @@
+button {
+    cursor: pointer;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: Kanit;
+    color: #BDBDBD;
+    background-color: #2F3036;
+    border: solid 1px transparent;
+    padding: 5px 20px;
+    border-radius: 6px;
+    letter-spacing: 0.05em;
+
+    &.small {
+        font-size: .75rem;
+    }
+    &.main {
+      color: #FFF;
+      background: linear-gradient(90deg, #F303B0 0%, #F30376 100%), #F30376;
+    }
+  }

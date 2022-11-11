@@ -1,0 +1,68 @@
+#splash-screen {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  place-items: center;
+  background-color: #232328;
+
+  &.hide {
+    display: none;
+  }
+
+  .brand-name {
+    flex: 1;
+    text-align: center;
+    
+    .fullname {
+      position: relative;
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .2s ease-in, 
+                  transform .4s ease-out;
+
+      &::after, &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        transition: width linear .9s .3s;
+        border-radius: 100px;
+      }
+      &::before {
+        width: 100%;
+        background-color: #2F3036;
+      }
+    }
+  }
+
+  &.animate {
+    animation: splash-fades-out .35s 1.7s ease-out;
+    .fullname {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    .fullname::after {
+        width: 100%;
+      }
+    }
+}
+
+@keyframes splash-fades-out {
+  from {
+    display: flex;
+    opacity: 1;
+  }
+  to {
+    display: flex;
+    opacity: 0;
+    
+  };
+}

@@ -1,0 +1,63 @@
+@import "@/components/Base/Variables.scss";
+
+.identity {
+    padding: 160px 0;
+    @media (max-width: $tablet-breakpoint) {
+        min-width: initial;
+        padding: 0;
+    }
+
+    .vcard {
+        display: flex;
+        place-items: center;
+    }
+    .portrait {
+        position: relative;
+        .big-circle {
+            //content: "";
+            position: absolute;
+            top:0;
+            left: 35px;
+            transform: translateY(-25%);
+            width: 326px;
+            height: 326px;
+            background-color: #2B2B31;
+            border-radius: 500px;
+            z-index: 0;
+            transition: transform 2s ease;
+
+        }
+        .small-circle {
+            //content: "";
+            position: absolute;
+            width: 208px;
+            height: 208px;
+            left: 0px;
+            top: 0;
+            transform: translate(-55px, 84px);
+            background: rgba(35, 35, 40, 0.85);
+            z-index: 0;
+            border-radius: 300px;
+            transition: transform .5s ease-out;
+        }
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 15px;
+    }
+    .infos {
+        z-index: 1;
+        font-family: var(--secondary-font);
+        font-weight: 200;
+        // we want fix value here
+        font-size: 14px;
+        line-height: 18px;
+
+        .fn {
+            font-family: var(--primary-font);
+            font-size: 1.125rem;
+            line-height: 2rem;
+        }
+    }
+}

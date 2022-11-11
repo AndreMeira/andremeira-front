@@ -1,0 +1,27 @@
+@import "@/components/Base/Variables.scss";
+
+nav.navigation  {
+    display: flex;
+    place-items: center;
+    padding: 0 55px;
+    height: 80px;
+    font-family: var(--secondary-font);
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: .875rem;
+    background-color: #232328;
+
+    .logo {
+        flex: 1;
+        line-height: 1;
+    }
+
+    ul li {
+        padding-left: 2rem;
+        display: inline-block;
+    }
+
+    @media (max-width: $tablet-breakpoint) {
+        padding: 0 15px;
+    }
+}

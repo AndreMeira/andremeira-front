@@ -1,0 +1,31 @@
+@import "@/components/Base/Variables.scss";
+
+.skill-items {
+    ul.logos {
+        list-style: none;
+        display: flex;
+        margin: 160px 0;
+        flex-wrap: wrap;
+        justify-content: start;
+        @media (max-width: $tablet-breakpoint) {    
+            margin: 40px 20px;
+            justify-content: flex-end;
+        }
+        @media (max-width: $mobile-breakpoint) {
+            margin: 40px 0;
+            justify-content: space-between;
+        }
+        
+        li {
+            padding:0 5px 0 5px;
+            
+            @media (max-width: $tablet-breakpoint) {    
+                width: 20%;
+                img {
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+}
