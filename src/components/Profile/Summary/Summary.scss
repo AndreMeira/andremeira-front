@@ -7,10 +7,12 @@
     justify-content: left;
 
     .second-panel {
-        width: 60%;
         min-width: 280px;
         flex:1;
         z-index: 1;
+    }
+    .first-panel {
+        align-self: flex-start;
     }
     @media (max-width: $tablet-breakpoint) {
         padding: 0 15px;

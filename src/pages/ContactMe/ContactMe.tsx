@@ -19,12 +19,13 @@ export default function() {
                     </Watermark>
                     <div className="text">
                     <p>
-                        I'd like to hear from you. &nbsp;<img src={Hand} className="icon"/>&nbsp;
+                        I'd like to hear from you. <img src={Hand} className="icon"/>&nbsp;
                         You can contact me on &nbsp; 
                         <a target="_blank" href="https://www.linkedin.com/in/andr%C3%A9-meira-989827164/"> 
                         <u>linkedin</u></a>.
                         Don't forget to have a look at my 
-                        <a target="_blank" href="https://github.com/AndreMeira"> <u>github</u> <img className="icon" src={Github}></img></a><br />
+                        <a target="_blank" href="https://github.com/AndreMeira"> <u>github</u>
+                        &nbsp;<img className="icon" src={Github}></img>&nbsp;</a><br />
                     </p>
                     </div>
                 </TwoPanels>
