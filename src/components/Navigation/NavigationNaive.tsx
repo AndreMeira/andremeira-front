@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Navigation.scss";
 
 interface NavigationNaiveProps {
@@ -14,7 +15,10 @@ export default function NavigationNaive(
     return (
         <nav className="navigation">
             <div className="logo">
+                <Link to="/">
                 <img src={logo}></img>
+                </Link>
+                
             </div>
             <ul>
                 {links.map((el, i) => 
