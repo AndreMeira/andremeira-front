@@ -18,7 +18,8 @@ export default function Description() {
                 Ability to talk and conduct project in French and English. 
                 Proven adaptability to differing cultural and business environments.
             </p>
-            <p><a href="#experiences-section"><button>read more <img src={Arrow}></img></button></a></p>
+            <p><a href="#experiences-section"><button>read more&nbsp;
+                <img className="arrow" src={Arrow}></img></button></a></p>
         </div>
     );
 }

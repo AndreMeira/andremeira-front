@@ -18,7 +18,7 @@ import { useEffect, useState } from "react";
         const setFromEvent = (e:MouseEvent) => {
             setPosition({ x: e.clientX, y: e.clientY });
         };
-
+        
         subscribe("mousemove", setFromEvent);
         return () => unsubscribe("mousemove", setFromEvent);
     }, []);

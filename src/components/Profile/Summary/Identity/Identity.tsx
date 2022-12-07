@@ -16,10 +16,6 @@ export default function Identity({picture}: IdentityProps): JSX.Element {
         x = 1 - (window.innerWidth / 2 - position.x) * 3 / window.innerWidth;
         y = 1 - (window.innerHeight / 2 - position.y) / window.innerHeight;
     }
-    
-    // console.log(`translate(${position.x}px, ${position.y}%)`);
-    // console.log(`translate(${x * 10}px, ${-25 * y}%)`);
-    // console.log(`translate(${x * -10}px, ${-10 * y}px)`)
 
     return (
         <div className='identity'>

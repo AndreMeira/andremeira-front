@@ -11,9 +11,7 @@ export default function Watermark({children}:WatermarkProps) {
 
     return (
         <div className="watermark">
-            <h2>
-                {elements.map(e => e)}
-            </h2>
+            <h2>{children}</h2>
             <div className='big-circle'></div>
             <div className='small-circle'></div>
         </div>

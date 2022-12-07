@@ -7,13 +7,11 @@ import ContactMe from "@/pages/ContactMe/ContactMe";
 
 export default function Router() {
     return (
-        <>
-            <Routes>
-                <Route path="/" element={<Profile />} />
-                <Route path="/demo" element={<Demo />} />
-                <Route path="/blog" element={<Soon />} />
-                <Route path="/contact-me" element={<ContactMe />} />
-            </Routes>
-        </>
+        <Routes>
+            <Route path="/" element={<Profile />} />
+            <Route path="/demo" element={<Demo />} />
+            <Route path="/blog" element={<Soon />} />
+            <Route path="/contact-me" element={<ContactMe />} />
+        </Routes>
     );
 };
