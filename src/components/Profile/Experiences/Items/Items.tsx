@@ -146,10 +146,9 @@ export default function Items() {
                             <li className="tag">Vue</li>
                         </ul>
                         <p className="description">
-                            Pluging flight/tour providers API to the plateform. Modernizing the architecture. 
-                            Introducing unit tests. Development of a quote engine 
-                            that gives end users the best price for their holiday package. 
-                            Development of a synchronisation algorithm between PG and MySQL databases.
+                            Developing food delivery system and logistic management, using dango vuejs, and react.
+                            Conceiving and implementing an algorithm to build delivery routes, 
+                            accordingly to shipping time requirement, logistic packing state, and driver resources.
                         </p>
                     </div>
                 </li>
