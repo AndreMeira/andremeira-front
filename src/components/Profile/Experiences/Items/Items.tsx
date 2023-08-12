@@ -152,6 +152,30 @@ export default function Items() {
                         </p>
                     </div>
                 </li>
+                <li className="experience-item">
+                    <div>
+                        <h3>
+                            <span>SOFTWARE ENGINEER</span><br/> 
+                            <span className="company">Wolt&nbsp;-&nbsp;Food and shopping delivery system</span>
+                        </h3>
+                        <span className="starting">
+                            <time>2023</time>
+                        </span>
+                        <ul className="experience-items-tags">
+                            <li className="tag">Kotlin</li>
+                            <li className="tag">Python</li>
+                            <li className="tag">Flask</li>
+                            <li className="tag">Mongodb</li>
+                            <li className="tag">React</li>
+                            <li className="tag important">Microservices</li>
+                            <li className="tag">Kubernetes</li>
+                            <li className="tag">Kafka</li>
+                        </ul>
+                        <p className="description">
+                            Modeling and implementing the offering system for merchant.
+                        </p>
+                    </div>
+                </li>
                 <li className="experience-item now">
                     <div>
                         <h3></h3>
@@ -162,7 +186,6 @@ export default function Items() {
                             <li></li>
                         </ul>
                         <p className="description">
-                            
                         </p>
                     </div>
                 </li>
